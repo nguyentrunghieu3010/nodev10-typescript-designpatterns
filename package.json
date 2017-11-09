@@ -1,0 +1,10 @@
+{
+  "name": "node_training",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "scripts": {
+    "helloworld": "node 01-helloworld/helloworld.ts",
+    "currency": "node 02-currency/test.ts"
+  }
+}
