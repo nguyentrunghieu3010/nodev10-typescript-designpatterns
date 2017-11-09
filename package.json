@@ -5,6 +5,7 @@
   },
   "scripts": {
     "helloworld": "node 01-helloworld/helloworld.ts",
-    "currency": "node 02-currency/test.ts"
+    "currency": "node 02-currency/test.ts",
+    "triangle": "node 03-triangle/triangle.ts"
   }
 }
