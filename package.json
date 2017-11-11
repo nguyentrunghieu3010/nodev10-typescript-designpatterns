@@ -1,0 +1,28 @@
+{
+  "name": "node-training",
+  "version": "1.0.0",
+  "description": "Node training some basic api",
+  "main": "app/example.js",
+  "dependencies": {
+    "@types/lodash": "^4.14.84"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.51"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyentrunghieu3010/node_training.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Nguyen Trung Hieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyentrunghieu3010/node_training/issues"
+  },
+  "homepage": "https://github.com/nguyentrunghieu3010/node_training#readme"
+}
