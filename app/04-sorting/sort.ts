@@ -10,5 +10,11 @@ function sortDESC() {
     return isMyArray ? myArray.sort((a, b) => b - a) : 0;
 }
 
+function reverseWordOrder(string) {
+    return string.split(' ').reverse().join(' ');
+
+}
+
 exports.sortASC = sortASC();
 exports.sortDESC = sortDESC();
+exports.reverseWordOrder = string => reverseWordOrder(string);
