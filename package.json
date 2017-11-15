@@ -13,7 +13,8 @@
     "helloworld": "node app/01-helloworld/helloworld.ts",
     "currency": "node app/02-currency/test.ts",
     "triangle": "node app/03-triangle/triangle.ts",
-    "sort": "node app/04-sorting/test.ts"
+    "sort": "node app/04-sorting/test.ts",
+    "read": "node app/05-read/read.ts"
   },
   "repository": {
     "type": "git",
