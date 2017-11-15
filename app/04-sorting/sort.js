@@ -11,6 +11,15 @@ function sortDESC() {
 function reverseWordOrder(string) {
     return string.split(' ').reverse().join(' ');
 }
+function test01() {
+    var sum = 0;
+    var nbArgs = process.argv.length;
+    for (var i = 0; i < nbArgs; i++) {
+        sum += Number(process.argv[i]);
+    }
+    return sum;
+}
 exports.sortASC = sortASC();
 exports.sortDESC = sortDESC();
+exports.test01 = test01();
 exports.reverseWordOrder = function (string) { return reverseWordOrder(string); };
