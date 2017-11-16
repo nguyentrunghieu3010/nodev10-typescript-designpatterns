@@ -1,15 +1,30 @@
 const fs = require('fs');
 const filename = '/Users/HieuNT48/projects/github/node_training/app/05-read/sample.csv';
-let buf = null;
 
-try {
-
-    buf = fs.readFileSync(filename, 'utf8');
-    const buffStr = buf.toString();
-    const lineArr = buffStr.split('\n');
-
-    console.log(lineArr);
-
-} catch (e) {
-    console.log(e);
+function readFileAsStream() {
+    try {
+        let streamData = fs.createReadStream(filename);
+        let rowData = '';
+        streamData.on('data', (data) => {
+            rowData += data;
+            console.log(rowData.split('\n'));
+        });
+    } catch (e) {
+        console.log(e);
+    }
 }
+
+function readFileSync(filename) {
+    try {
+        let data = fs.readFileSync(filename, 'utf8');
+
+        console.log(data);
+
+    } catch (e) {
+        console.log()
+    }
+}
+
+exports.readFileAsStream = readFileAsStream();
+
+exports.readFileSync = filename => readFileSync(filename);
