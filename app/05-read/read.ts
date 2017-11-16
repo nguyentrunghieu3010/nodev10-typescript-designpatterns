@@ -1,3 +1,5 @@
+import {error} from "util";
+
 const fs = require('fs');
 const filename = '/Users/HieuNT48/projects/github/node_training/app/05-read/sample.csv';
 
@@ -18,7 +20,7 @@ function readFileSync(filename) {
     try {
         let data = fs.readFileSync(filename, 'utf8');
 
-        console.log(data);
+        console.log(data.toString().split('\n').length-1);
 
     } catch (e) {
         console.log()

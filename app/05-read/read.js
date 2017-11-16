@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var fs = require('fs');
 var filename = '/Users/HieuNT48/projects/github/node_training/app/05-read/sample.csv';
 function readFileAsStream() {
@@ -16,7 +18,7 @@ function readFileAsStream() {
 function readFileSync(filename) {
     try {
         var data = fs.readFileSync(filename, 'utf8');
-        console.log(data);
+        console.log(data.toString().split('\n').length - 1);
     }
     catch (e) {
         console.log();
