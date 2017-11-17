@@ -22,6 +22,6 @@ function solution(obj) {
     return 0;
 }
 
-for (number of arrNumbers) {
+for (let number of arrNumbers) {
     console.log(`input: ${number}, output: ${solution(number)}`)
 }

@@ -20,6 +20,6 @@ function solution(obj) {
     return 0;
 }
 for (var _i = 0, arrNumbers_1 = arrNumbers; _i < arrNumbers_1.length; _i++) {
-    number = arrNumbers_1[_i];
+    var number = arrNumbers_1[_i];
     console.log("input: " + number + ", output: " + solution(number));
 }
