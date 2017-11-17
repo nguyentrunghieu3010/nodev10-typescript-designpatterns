@@ -4,7 +4,8 @@
   "description": "Node training some basic api",
   "main": "app/example.js",
   "dependencies": {
-    "@types/lodash": "^4.14.84"
+    "@types/lodash": "^4.14.84",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "@types/node": "^8.0.51"
@@ -14,7 +15,8 @@
     "currency": "node app/02-currency/test.ts",
     "triangle": "node app/03-triangle/triangle.ts",
     "sort": "node app/04-sorting/test.ts",
-    "read": "node app/05-read/test.ts"
+    "read": "node app/05-read/test.ts",
+    "lodash": "node app/06-lodash/lodash.ts"
   },
   "repository": {
     "type": "git",
