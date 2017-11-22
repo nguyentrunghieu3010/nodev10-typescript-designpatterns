@@ -16,8 +16,25 @@ function findTheShortestSequence(number) {
             myArray.push(number);
         }
     }
-
     return myArray;
 }
 
-console.log(findTheShortestSequence(17));
+
+function findTheSmallestDistance() {
+    let myArray = [8, 24, 3, 20, 1, 17];
+    let myArrayTemp = [];
+    for (let i = 0; i < myArray.length - 1; i++) {
+        for (let j = myArray.length - 1; j >= 0; j--) {
+            if (myArray[i] !== myArray[j]) {
+                if (myArray[i] - myArray[j] >= 0) {
+                    let number = myArray[i] - myArray[j];
+                    myArrayTemp.push(number)
+                }
+            }
+        }
+    }
+    return Math.min(...myArrayTemp);
+}
+
+console.log('findTheShortestSequence',findTheShortestSequence(17));
+console.log(findTheSmallestDistance());
