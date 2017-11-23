@@ -21,20 +21,27 @@ function findTheShortestSequence(number) {
 
 
 function findTheSmallestDistance() {
-    let myArray = [8, 24, 3, 20, 1, 17];
-    let myArrayTemp = [];
-    for (let i = 0; i < myArray.length - 1; i++) {
-        for (let j = myArray.length - 1; j >= 0; j--) {
-            if (myArray[i] !== myArray[j]) {
-                if (myArray[i] - myArray[j] >= 0) {
-                    let number = myArray[i] - myArray[j];
-                    myArrayTemp.push(number)
-                }
-            }
+    // let myArray = [8, 24, 3, 20, 1, 17];
+    let myArray = [7, 21, 3, 42, 3, 7];
+    let smallestArray = [];
+    myArray.sort((a, b) => a - b);
+
+    for (let i = 0; i < myArray.length; i++) {
+
+        if (myArray[i] === myArray[i + 1]) {
+            smallestArray.push(0);
+        } else if (myArray[i] - myArray[i + 1] > 0) {
+            let smallestNumber = myArray[i] - myArray[i + 1];
+            smallestArray.push(smallestNumber);
+        } else if (myArray[i] - myArray[i + 1] < 0) {
+            let smallestNumber = myArray[i + 1] - myArray[i];
+            smallestArray.push(smallestNumber);
         }
     }
-    return Math.min(...myArrayTemp);
+
+    console.log(Math.min(...smallestArray));
+
 }
 
-console.log('findTheShortestSequence',findTheShortestSequence(17));
+console.log('findTheShortestSequence', findTheShortestSequence(17));
 console.log(findTheSmallestDistance());

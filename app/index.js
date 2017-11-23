@@ -18,19 +18,24 @@ function findTheShortestSequence(number) {
     return myArray;
 }
 function findTheSmallestDistance() {
-    var myArray = [8, 24, 3, 20, 1, 17];
-    var myArrayTemp = [];
-    for (var i = 0; i < myArray.length - 1; i++) {
-        for (var j = myArray.length - 1; j >= 0; j--) {
-            if (myArray[i] !== myArray[j]) {
-                if (myArray[i] - myArray[j] >= 0) {
-                    var number = myArray[i] - myArray[j];
-                    myArrayTemp.push(number);
-                }
-            }
+    // let myArray = [8, 24, 3, 20, 1, 17];
+    var myArray = [7, 21, 3, 42, 3, 7];
+    var smallestArray = [];
+    myArray.sort(function (a, b) { return a - b; });
+    for (var i = 0; i < myArray.length; i++) {
+        if (myArray[i] === myArray[i + 1]) {
+            smallestArray.push(0);
+        }
+        else if (myArray[i] - myArray[i + 1] > 0) {
+            var smallestNumber = myArray[i] - myArray[i + 1];
+            smallestArray.push(smallestNumber);
+        }
+        else if (myArray[i] - myArray[i + 1] < 0) {
+            var smallestNumber = myArray[i + 1] - myArray[i];
+            smallestArray.push(smallestNumber);
         }
     }
-    return Math.min.apply(Math, myArrayTemp);
+    console.log(Math.min.apply(Math, smallestArray));
 }
 console.log('findTheShortestSequence', findTheShortestSequence(17));
 console.log(findTheSmallestDistance());

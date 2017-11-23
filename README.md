@@ -9,6 +9,9 @@ https://github.com/Madmous/Codility/tree/master/lesson1
 ## EBook Node
 https://github.com/thinkphp/nodejs-books/tree/master/public
 
+## Algorithms
+http://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/
+
 ## How to run Node file
 node 01-helloworld/helloworld.ts
 
