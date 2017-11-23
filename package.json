@@ -17,7 +17,8 @@
     "triangle": "node app/03-triangle/triangle.ts",
     "sort": "node app/04-sorting/test.ts",
     "read": "node app/05-read/test.ts",
-    "lodash": "node app/06-lodash/lodash.ts"
+    "lodash": "node app/06-lodash/lodash.ts",
+    "algorithm": "node app/algorithm/index.ts"
   },
   "repository": {
     "type": "git",
