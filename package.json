@@ -5,7 +5,8 @@
   "main": "app/example.js",
   "dependencies": {
     "@types/lodash": "^4.14.84",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "@types/node": "^8.0.51"
@@ -18,7 +19,8 @@
     "sort": "node app/04-sorting/test.ts",
     "read": "node app/05-read/test.ts",
     "lodash": "node app/06-lodash/lodash.ts",
-    "algorithm": "node app/algorithm/index.ts"
+    "algorithm": "node app/algorithm/index.ts",
+    "redis": "node app/redis/index.ts"
   },
   "repository": {
     "type": "git",
