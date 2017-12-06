@@ -6,6 +6,70 @@ function concatArrays() {
     console.log(other);
 }
 
+function filterArrayJsonObject() {
+    let data = [
+        {
+            "description": "Insurance",
+            "excluded": false,
+            "id": 6151,
+            "key": "INSURANCE"
+        },
+        {
+            "description": "General",
+            "excluded": false,
+            "id": 56,
+            "key": "GENERAL"
+        },
+        {
+            "description": "Financial Planning",
+            "excluded": true,
+            "id": 55,
+            "key": "FINANCIAL PLANNING"
+        },
+        {
+            "description": "Investment Proposal",
+            "excluded": false,
+            "id": 54,
+            "key": "INVESTMENT PROPOSAL"
+        },
+        {
+            "description": "Product",
+            "excluded": false,
+            "id": 53,
+            "key": "PRODUCT"
+        },
+        {
+            "description": "Customer Care",
+            "excluded": false,
+            "id": 52,
+            "key": "CUSTOMER CARE"
+        },
+        {
+            "description": "Asset Allocation",
+            "excluded": false,
+            "id": 51,
+            "key": "ASSET ALLOCATION"
+        }
+    ];
+
+
+    // let data = [
+    //     {'user': 'barney', 'active': false},
+    //     {'user': 'fred', 'active': false},
+    //     {'user': 'pebbles', 'active': true}
+    // ];
+
+    console.log("Before filter", data.length);
+
+    // return _.dropRightWhile(data, (resp) =>{
+    //      return !resp.excluded;
+    //  });
+
+    const dataResp = _.filter(data, ['excluded', false]);
+
+    console.log("After filter", dataResp.length);
+    return dataResp;
+}
 
 function groupingByFirstLetter() {
 
@@ -79,3 +143,5 @@ function groupingByFirstLetter() {
 }
 
 console.log(groupingByFirstLetter());
+
+console.log(filterArrayJsonObject());
