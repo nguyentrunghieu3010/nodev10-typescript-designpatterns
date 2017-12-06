@@ -2,4 +2,4 @@
 .gitignore
 .idea/
 *.log
-app/01-helloworld/helloworld.js
+node_modules
