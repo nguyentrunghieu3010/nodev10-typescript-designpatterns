@@ -1,5 +1,6 @@
 const redis = require('redis');
 const client = redis.createClient();
+const api = require('./api');
 
 client.on('connect', () => {
     console.log('Redis Client is Connect');
@@ -7,6 +8,9 @@ client.on('connect', () => {
 
 client.on('ready', () => {
     console.log('Redis Client is Ready');
+
+    api.runGetAndSet(client);
+    api.runHmsetHgetall(client);
 });
 
 client.on('reconnecting', () => {
