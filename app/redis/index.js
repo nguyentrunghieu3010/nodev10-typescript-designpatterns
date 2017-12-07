@@ -8,6 +8,7 @@ client.on('ready', function () {
     console.log('Redis Client is Ready');
     api.runGetAndSet(client);
     api.runHmsetHgetall(client);
+    api.runHsetHkeys(client);
 });
 client.on('reconnecting', function () {
     console.log('Redis Client is Reconnecting');

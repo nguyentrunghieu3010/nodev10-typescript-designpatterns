@@ -11,6 +11,7 @@ client.on('ready', () => {
 
     api.runGetAndSet(client);
     api.runHmsetHgetall(client);
+    api.runHsetHkeys(client);
 });
 
 client.on('reconnecting', () => {
