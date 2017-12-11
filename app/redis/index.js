@@ -9,6 +9,8 @@ client.on('ready', function () {
     api.runGetAndSet(client);
     api.runHmsetHgetall(client);
     api.runHsetHkeys(client);
+    api.runIncrementingAndDecrementing(client);
+    api.runAddNewUserJson(client);
 });
 client.on('reconnecting', function () {
     console.log('Redis Client is Reconnecting');

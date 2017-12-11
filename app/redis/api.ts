@@ -75,11 +75,89 @@ function runHsetHkeys(redisClient) {
             data.forEach((resp, i) => {
                 console.log(" " + i + ": " + resp);
             });
+    });
 
-        redisClient.quit();
+    let user = {
+        userid: 'id-01',
+        username: 'hugenguyen',
+        useremail: 'hugenguyen@gmail.com',
+        address: 'ho chi minh city'
+    };
+
+    redisClient.hset('users', user.userid, user);
+    redisClient.hget('users', user.userid, (err, data) => {
+        if (err)
+            console.log("Run Hget Error: ", err);
+
+        if (data)
+            console.log("Run Hset Data ", data);
     });
 }
+
+function runIncrementingAndDecrementing(redisClient) {
+    redisClient.set('key1', 10, () => {
+        redisClient.incr('key1', (err, data) => {
+            if (err)
+                console.log("Run Incrementing And Decrementing Error: ", err);
+
+            if (data)
+                console.log("Run Incrementing And Decrementing Data ", data);
+        });
+    });
+
+
+    redisClient.set('key2', 8, () => {
+        redisClient.incrby('key2', 6, (err, data) => {
+            if (err)
+                console.log("Run Incrementing And Decrementing Error: ", err);
+
+            if (data)
+                console.log("Run Incrementing And Decrementing Data ", data);
+        });
+    });
+}
+
+function runAddNewUserJson(redisClient) {
+    redisClient.sadd(['users', 'user:hieu']);
+    redisClient.hmset('user:hieu', 'username', 'hieu', 'fpt', 'nodejs');
+
+    redisClient.sadd('users', 'user:nguyen');
+    redisClient.hmset('user:nguyen', 'username', 'nguyen', 'fpt', 'chatbot');
+
+    redisClient.hgetall('user:hieu', (err, data) => {
+        if (err)
+            console.log("Run Add New User Error: ", err);
+
+        if (data)
+            console.log("Run Add New User Data ", data);
+    });
+
+
+    redisClient.hgetall('user:nguyen', (err, data) => {
+        if (err)
+            console.log("Run Add New User Error: ", err);
+
+        if (data)
+            console.log("Run Add New User Data ", data);
+    });
+
+    redisClient.exists('users', (err, data) => {
+        console.log(data);
+        if (data === 1) {
+            console.log('Exists');
+            redisClient.smembers('users', (err, data) => {
+                console.log('Get all users: ', data);
+            });
+        } else {
+            console.log('Dose not exists');
+        }
+
+    });
+}
+
 
 exports.runGetAndSet = redisClient => runGetAndSet(redisClient);
 exports.runHmsetHgetall = redisClient => runHmsetHgetall(redisClient);
 exports.runHsetHkeys = redisClient => runHsetHkeys(redisClient);
+exports.runIncrementingAndDecrementing = redisClient => runIncrementingAndDecrementing(redisClient);
+exports.runAddNewUserJson = redisClient => runAddNewUserJson(redisClient);
