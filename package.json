@@ -20,7 +20,8 @@
     "read": "node app/05-read/test.ts",
     "lodash": "node app/06-lodash/lodash.ts",
     "algorithm": "node app/algorithm/index.ts",
-    "redis": "node app/redis/index.ts"
+    "redis": "node app/redis/index.ts",
+    "cluster": "node app/cluster/index.ts"
   },
   "repository": {
     "type": "git",
