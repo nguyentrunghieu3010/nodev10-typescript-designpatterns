@@ -21,7 +21,9 @@
     "lodash": "node app/06-lodash/lodash.ts",
     "algorithm": "node app/algorithm/index.ts",
     "redis": "node app/redis/index.ts",
-    "cluster": "node app/cluster/index.ts"
+    "cluster": "node app/cluster/index.ts",
+    "async": "node app/asynchooks/index.ts",
+    "crypto": "node app/crypto/index.ts"
   },
   "repository": {
     "type": "git",
