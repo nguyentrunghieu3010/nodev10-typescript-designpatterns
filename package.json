@@ -23,7 +23,8 @@
     "redis": "node app/redis/index.ts",
     "cluster": "node app/cluster/index.ts",
     "async": "node app/asynchooks/index.ts",
-    "crypto": "node app/crypto/index.ts"
+    "crypto": "node app/crypto/index.ts",
+    "querystring": "node app/querystring/index.ts"
   },
   "repository": {
     "type": "git",
