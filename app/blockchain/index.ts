@@ -7,7 +7,7 @@ class Block {
         this.timestamp = timestamp;
         this.data = data;
         this.previousHash = previousHash;
-        this.currenHash = this.calculateHash();
+        this.hash = this.calculateHash();
     }
 
     calculateHash() {
@@ -30,9 +30,25 @@ class Blockchain {
     }
 
     addBlock(newBlock) {
-        newBlock.previousHash = this.getLatestBlock().currenHash;
-        newBlock.currenHash = newBlock.calculateHash();
+        newBlock.previousHash = this.getLatestBlock().hash;
+        newBlock.hash = newBlock.calculateHash();
         this.chain.push(newBlock);
+    }
+
+    isChainValid() {
+        for (let i = 1; i < this.chain.length; i++) {
+            const currentBlock = this.chain[i];
+            const previousBlock = this.chain[i - 1];
+
+            if (currentBlock.currentHash !== currentBlock.calculateHash()) {
+                return false;
+            }
+
+            if (currentBlock.previousHash != previousBlock.currentHash) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 
@@ -41,3 +57,9 @@ bitcoin.addBlock(new Block(1, "10/07/2017", {amount: 4}));
 bitcoin.addBlock(new Block(2, "12/12/2017", {amount: 10}));
 
 console.log(JSON.stringify(bitcoin, null, 4));
+
+
+bitcoin.chain[1].data = {amount: 100};
+bitcoin.chain[1].hash = bitcoin.chain[1].calculateHash();
+
+console.log('Is blockchain valid ? ' + bitcoin.isChainValid());
