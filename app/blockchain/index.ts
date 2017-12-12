@@ -7,7 +7,7 @@ class Block {
         this.timestamp = timestamp;
         this.data = data;
         this.previousHash = previousHash;
-        this.hash = this.calculateHash();
+        this.currenHash = this.calculateHash();
     }
 
     calculateHash() {
@@ -30,8 +30,8 @@ class Blockchain {
     }
 
     addBlock(newBlock) {
-        newBlock.previousHash = this.getLatestBlock().hash;
-        newBlock.hash = newBlock.calculateHash();
+        newBlock.previousHash = this.getLatestBlock().currenHash;
+        newBlock.currenHash = newBlock.calculateHash();
         this.chain.push(newBlock);
     }
 }
