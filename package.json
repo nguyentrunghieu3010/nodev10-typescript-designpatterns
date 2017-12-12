@@ -28,7 +28,8 @@
     "crypto": "node app/crypto/index.ts",
     "querystring": "node app/querystring/index.ts",
     "html": "node app/html-validate/index.ts",
-    "bitcoin": "node app/blockchain/index.ts"
+    "bitcoin": "node app/blockchain/index.ts",
+    "bitcoin1": "node app/blockchain/index-v2.ts"
   },
   "repository": {
     "type": "git",
