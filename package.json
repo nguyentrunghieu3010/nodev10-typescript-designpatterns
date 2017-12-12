@@ -5,6 +5,7 @@
   "main": "app/example.js",
   "dependencies": {
     "@types/lodash": "^4.14.84",
+    "crypto-js": "^3.1.9-1",
     "html-validator": "^2.2.3",
     "lodash": "^4.17.4",
     "redis": "^2.8.0"
@@ -26,7 +27,8 @@
     "async": "node app/asynchooks/index.ts",
     "crypto": "node app/crypto/index.ts",
     "querystring": "node app/querystring/index.ts",
-    "html": "node app/html-validate/index.ts"
+    "html": "node app/html-validate/index.ts",
+    "bitcoin": "node app/blockchain/index.ts"
   },
   "repository": {
     "type": "git",
