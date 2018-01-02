@@ -1,7 +1,7 @@
 const apiai = require('apiai');
 const app = apiai('a733a2dae0314056b55b1c7fcfa26229');
 
-const request = app.textRequest('I am Hieu from FPT Software', { sessionId: 'mybot-ea1ad' });
+const request = app.textRequest('your name is huge nguyen ?', { sessionId: 'mybot-ea1ad' });
 
 request.on('response', (response) => {
     console.log('Response : ', response);
