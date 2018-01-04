@@ -1,6 +1,10 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 
+// const path = require('path');
+// const rootPath = path.dirname(require.main.filename);
+// console.log(rootPath);
+
 // Connection URL
 const url = 'mongodb://localhost:27017';
 
