@@ -17,6 +17,7 @@
     "@types/node": "^8.0.51"
   },
   "scripts": {
+    "mlab": "node app/mlab/index.js",
     "index": "node app/index.ts",
     "helloworld": "node app/01-helloworld/helloworld.ts",
     "currency": "node app/02-currency/test.ts",
