@@ -1,4 +1,8 @@
 var cryptoo = require('crypto');
 var secret = 'nguyentrunghieu';
-var hash = cryptoo.createHmac('sha256', secret).update('I love you').digest('hex');
-console.log(hash);
+
+const hashPassword = (passString, secret) => {
+    return cryptoo.createHmac('sha256', secret).update(passString).digest('hex');
+};
+
+const passwordHash = hashPassword(secret, )

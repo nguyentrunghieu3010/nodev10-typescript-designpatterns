@@ -1,1 +1,4 @@
-console.log('Hi !!! My name is Nguyen Trung Hieu');
+
+
+const nodeenv = process.env.NODE_ENV;
+console.log('Hi !!! SHOW Enviroment::::::', nodeenv);

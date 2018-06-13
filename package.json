@@ -18,7 +18,7 @@
   },
   "scripts": {
     "mlab": "node app/mlab/index.js",
-    "index": "node app/index.ts",
+    "index": "node app/index.js",
     "helloworld": "node app/01-helloworld/helloworld.ts",
     "currency": "node app/02-currency/test.ts",
     "triangle": "node app/03-triangle/triangle.ts",
@@ -29,7 +29,7 @@
     "redis": "node app/redis/index.ts",
     "cluster": "node app/cluster/index.ts",
     "async": "node app/asynchooks/index.ts",
-    "crypto": "node app/crypto/index.ts",
+    "crypto": "node app/crypto/index.js",
     "querystring": "node app/querystring/index.ts",
     "html": "node app/html-validate/index.ts",
     "bitcoin": "node app/blockchain/index.ts",
