@@ -11,6 +11,7 @@
     "lodash": "^4.17.4",
     "mongodb": "^3.0.1",
     "mongoose": "^5.0.0-rc1",
+    "node-rest-client": "^3.1.0",
     "redis": "^2.8.0"
   },
   "devDependencies": {
@@ -36,7 +37,8 @@
     "bitcoin1": "node app/blockchain/index-v2.ts",
     "blocking": "node app/blocking-vs-non-blocking/index.ts",
     "chatbot": "node app/chatbot/index.ts",
-    "mongo": "node app/mongo/index.ts"
+    "mongo": "node app/mongo/index.ts",
+    "nodeclient": "node app/node-client/index.ts"
   },
   "repository": {
     "type": "git",
