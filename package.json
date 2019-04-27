@@ -1,48 +1,14 @@
 {
-  "name": "node-training",
+  "name": "nodev10-typescript-designpatterns",
   "version": "1.0.0",
-  "description": "Node training some basic api",
-  "main": "app/example.js",
-  "dependencies": {
-    "@types/lodash": "^4.14.84",
-    "apiai": "^4.0.3",
-    "crypto-js": "^3.1.9-1",
-    "html-validator": "^2.2.3",
-    "lodash": "^4.17.4",
-    "mongodb": "^3.0.1",
-    "mongoose": "^5.0.0-rc1",
-    "node-rest-client": "^3.1.0",
-    "redis": "^2.8.0"
-  },
-  "devDependencies": {
-    "@types/node": "^8.0.51"
-  },
-  "scripts": {
-    "mlab": "node app/mlab/index.js",
-    "index": "node app/index.js",
-    "helloworld": "node app/01-helloworld/helloworld.ts",
-    "currency": "node app/02-currency/test.ts",
-    "triangle": "node app/03-triangle/triangle.ts",
-    "sort": "node app/04-sorting/test.ts",
-    "read": "node app/05-read/test.ts",
-    "lodash": "node app/06-lodash/lodash.ts",
-    "algorithm": "node app/algorithm/index.ts",
-    "redis": "node app/redis/index.ts",
-    "cluster": "node app/cluster/index.ts",
-    "async": "node app/asynchooks/index.ts",
-    "crypto": "node app/crypto/index.js",
-    "querystring": "node app/querystring/index.ts",
-    "html": "node app/html-validate/index.ts",
-    "bitcoin": "node app/blockchain/index.ts",
-    "bitcoin1": "node app/blockchain/index-v2.ts",
-    "blocking": "node app/blocking-vs-non-blocking/index.ts",
-    "chatbot": "node app/chatbot/index.ts",
-    "mongo": "node app/mongo/index.ts",
-    "nodeclient": "node app/node-client/index.ts"
-  },
+  "description": "Node version typescript desgin patterns",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nguyentrunghieu3010/node_training.git"
+    "url": "https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns.git"
   },
   "keywords": [
     "node"
@@ -50,7 +16,7 @@
   "author": "Nguyen Trung Hieu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nguyentrunghieu3010/node_training/issues"
+    "url": "https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns.git"
   },
-  "homepage": "https://github.com/nguyentrunghieu3010/node_training#readme"
+  "homepage": "https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns.git"
 }
