@@ -8,8 +8,8 @@ Desgin Patterns is the key to avoid the Spaghetti code
 
 ### Creational ###
 
-* [Singleton](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
-* [Abstract Factory](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Singleton](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/creational/singleton)
+* [Abstract Factory](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/creational/abstract_factory)
 * [Factory Method](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 * [Builder](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 * [Prototype](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
