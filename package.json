@@ -4,8 +4,17 @@
   "description": "Node version typescript desgin patterns",
   "main": "",
   "dependencies": {},
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "babel-cli": "^6.26.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "start": "tsc && node ./dist/main.js",
+    "compile": "npm run lint && rm -rf dist/ && tsc -p . && babel src --out-dir dist --source-maps inline --copy-files",
+    "lint": "tslint --fix --project tsconfig.json"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns.git"
