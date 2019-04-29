@@ -4,69 +4,57 @@
 
 Here are the implementations of the following design patterns in TypeScript v.3.4.5:
 
+Desgin Patterns is the key to avoid the Spaghetti code
+
 ### Creational ###
 
-* [Singleton](https://github.com/torokmark/design_patterns_in_typescript/tree/master/singleton)
-* [Abstract Factory](https://github.com/torokmark/design_patterns_in_typescript/tree/master/abstract_factory)
-* [Factory Method](https://github.com/torokmark/design_patterns_in_typescript/tree/master/factory_method)
-* [Builder](https://github.com/torokmark/design_patterns_in_typescript/tree/master/builder)
-* [Prototype](https://github.com/torokmark/design_patterns_in_typescript/tree/master/prototype)
+* [Singleton]https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Abstract Factory](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Factory Method](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Builder](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Prototype](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 
 
 ### Structural Patterns ###
 
-* [Adapter](https://github.com/torokmark/design_patterns_in_typescript/tree/master/adapter)
-* [Bridge](https://github.com/torokmark/design_patterns_in_typescript/tree/master/bridge)
-* [Composite](https://github.com/torokmark/design_patterns_in_typescript/tree/master/composite)
-* [Decorator](https://github.com/torokmark/design_patterns_in_typescript/tree/master/decorator)
-* [Facade](https://github.com/torokmark/design_patterns_in_typescript/tree/master/facade)
-* [Flyweight](https://github.com/torokmark/design_patterns_in_typescript/tree/master/flyweight)
-* [Proxy](https://github.com/torokmark/design_patterns_in_typescript/tree/master/proxy)
+* [Adapter](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Bridge](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Composite](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Decorator](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Facade](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Flyweight](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Proxy](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 
 
 ### Behavioral Patterns ###
 
-* [Chain of Responsibility](https://github.com/torokmark/design_patterns_in_typescript/tree/master/chain_of_responsibility)
-* [Command](https://github.com/torokmark/design_patterns_in_typescript/tree/master/command)
-* [Interpreter](https://github.com/torokmark/design_patterns_in_typescript/tree/master/interpreter)
-* [Iterator](https://github.com/torokmark/design_patterns_in_typescript/tree/master/iterator)
-* [Mediator](https://github.com/torokmark/design_patterns_in_typescript/tree/master/mediator)
-* [Memento](https://github.com/torokmark/design_patterns_in_typescript/tree/master/memento)
-* [Observer](https://github.com/torokmark/design_patterns_in_typescript/tree/master/observer)
-* [State](https://github.com/torokmark/design_patterns_in_typescript/tree/master/state)
-* [Strategy](https://github.com/torokmark/design_patterns_in_typescript/tree/master/strategy)
-* [Template Method](https://github.com/torokmark/design_patterns_in_typescript/tree/master/template_method)
-* [Visitor](https://github.com/torokmark/design_patterns_in_typescript/tree/master/visitor)
+* [Chain of Responsibility](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Command](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Interpreter](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Iterator](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Mediator](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Memento](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Observer](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [State](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Strategy](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Template Method](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Visitor](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 
 ## Compile the project
 
 ```
-$ git clone https://github.com/torokmark/design_patterns_in_typescript.git
-$ cd design_patterns_in_typescript
-$ tsc
-```
-
-There is a `tsconfig.json` file in the root directory which is responsible for the compiler options.
-
-As it is set the default target is Ecmascript5 now.
-
-Any additional options come here.
-
-By default the output is a `patterns.js` file.
-
-
-To compile only one pattern, use the following command.
-
-```
-$ cd design_patterns_in_typescript/visitor
-$ tsc --target ES5 --module system --outFile visitor.js visitor.ts
+$ git clone https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns.git
+$ cd nodev10-typescript-designpatterns
+$ npm run install
+$ npm run lint
+$ npm run compile
 ```
 
 ## Execute the project
 
-After the compilation of the project, a `patterns.js` is generated by default.
+After the compilation of the project, a `dist` folder is generated by default.
 Executing the file is:
 
 ```
-node patterns.js
+npm run start
 ```
