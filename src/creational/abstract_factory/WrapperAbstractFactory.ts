@@ -6,7 +6,6 @@ export class WrapperAbstractFactory {
     private abstractCar: CarAbstractFactory;
     private abstractAnimal: AnimalAbstractFactory;
 
-
     constructor(factory: AbstractFactory.AbstractFactory) {
         this.abstractCar = factory.showCars();
         this.abstractAnimal = factory.showAnimals();
