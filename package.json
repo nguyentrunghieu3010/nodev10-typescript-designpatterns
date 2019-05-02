@@ -11,8 +11,8 @@
     "typescript": "^3.4.5"
   },
   "scripts": {
-    "start": "tsc && node ./dist/main.js",
-    "compile": "npm run lint && rm -rf dist/ && tsc -p . && babel src --out-dir dist --source-maps inline --copy-files",
+    "start": "npm run compile && tsc && node ./dist/main.js",
+    "compile": "npm run lint &&  npm run lint && rm -rf dist/ && tsc -p . && babel src --out-dir dist --source-maps inline --copy-files",
     "lint": "tslint --fix --project tsconfig.json"
   },
   "repository": {

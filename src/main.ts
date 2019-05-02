@@ -3,5 +3,5 @@ import * as abstractfactory from './creational/abstract_factory';
 import * as factory from './creational/factory';
 
 singleton.execute(false);
-abstractfactory.execute(false);
-factory.execute(true);
+abstractfactory.execute(true);
+factory.execute(false);

@@ -4,6 +4,6 @@ export interface AnimalAbstractFactory {
 
 export class DuckAnimal implements AnimalAbstractFactory {
     showAnimals(): string {
-        return 'This is a Duck animal';
+        return 'This is a Duck animal is built based on Abstract Factory';
     }
 }
