@@ -1,15 +1,19 @@
 
-import * as Singleton from './Singleton';
+import { SingletonPattern } from './SingletonPattern';
 
-export function execute(flag: boolean): void {
-    if (flag) {
-        const singleton1 = Singleton.Singleton.getInstance();
-        const singleton2 = Singleton.Singleton.getInstance();
+export namespace SingletonDemo {
+    export function execute(flag: boolean): void {
+        if (flag) {
+            console.log('----------Start Singletons Desgin Pattern----------');
+            const singleton1 = SingletonPattern.Singleton.getInstance();
+            const singleton2 = SingletonPattern.Singleton.getInstance();
 
-        if (singleton1 === singleton2) {
-            console.log('Two singletons are the same');
-        } else {
-            console.log('Two singletons are NOT the same');
+            if (singleton1 === singleton2) {
+                console.log('Two singletons are the same');
+            } else {
+                console.log('Two singletons are NOT the same');
+            }
+            console.log('----------Start Singletons Desgin Pattern----------');
         }
     }
 }
