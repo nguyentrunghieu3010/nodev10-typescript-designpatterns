@@ -1,12 +1,12 @@
-import * as  AbstractFactory from './AbstractFactory';
-import { CarAbstractFactory } from './CarAbstractFactory';
-import { AnimalAbstractFactory } from './AnimalAbstractFactory';
+import { AbstractFactoryPattern } from './AbstractFactoryPattern';
+import { Cars } from './CarAbstractFactory';
+import { Animal } from './AnimalAbstractFactory';
 
 export class WrapperAbstractFactory {
-    private abstractCar: CarAbstractFactory;
-    private abstractAnimal: AnimalAbstractFactory;
+    private abstractCar: Cars.CarAbstractFactory;
+    private abstractAnimal: Animal.AnimalAbstractFactory;
 
-    constructor(factory: AbstractFactory.AbstractFactory) {
+    constructor(factory: AbstractFactoryPattern.AbstractFactory) {
         this.abstractCar = factory.showCars();
         this.abstractAnimal = factory.showAnimals();
     }

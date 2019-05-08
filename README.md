@@ -4,6 +4,8 @@
 
 SOLID (SRP, OCP, LSP, ISP, DIP)
 
+[OODesign](https://www.oodesign.com/)
+
 ### Single Responsibility ###
     Testing – A class with one responsibility will have far fewer test cases
     Lower coupling – Less functionality in a single class will have fewer dependencies
