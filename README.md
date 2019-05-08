@@ -1,5 +1,23 @@
 
 ## NodeJs Version 10 Design Patterns in TypeScript v.3.4.5
+# Design Principles #
+
+SOLID (SRP, OCP, LSP, ISP, DIP)
+
+### Single Responsibility ###
+    Testing – A class with one responsibility will have far fewer test cases
+    Lower coupling – Less functionality in a single class will have fewer dependencies
+    Organization – Smaller, well-organized classes are easier to search than monolithic ones
+### Open/Closed ###
+    Open for Extension - Easily for extending classes
+    Closed for Modification - Easily for fixing bugs
+### Liskov Substitution ###
+    Replacements will not disrupting the behavior of our program
+### Interface Segregation ###
+    Larger interfaces should be split into smaller ones
+### Dependency Inversion ###
+    Decoupling of software modules
+
 # Design Patterns in TypeScript v.3.4.5 #
 
 Here are the implementations of the following design patterns in TypeScript v.3.4.5:
