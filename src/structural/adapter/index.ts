@@ -1,5 +1,3 @@
-
-
 import { AdapterPattern } from './AdapterPattern';
 
 export namespace AdapterDemo {
