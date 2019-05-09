@@ -37,7 +37,7 @@ Desgin Patterns is the key to avoid the Spaghetti code
 
 ### Structural Patterns ###
 
-* [Adapter](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Adapter](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/structural/adapter)
 * [Bridge](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 * [Composite](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 * [Decorator](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
