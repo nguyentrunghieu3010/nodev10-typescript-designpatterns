@@ -5,7 +5,7 @@ export namespace BridgePattern {
      * No need to create Shape as Interface
      */
     export abstract class Shape {
-        iColor: IColor;
+        protected iColor: IColor;
 
         constructor(iColor: IColor) {
             this.iColor = iColor;
