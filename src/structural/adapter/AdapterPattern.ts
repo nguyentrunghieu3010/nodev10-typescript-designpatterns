@@ -1,13 +1,13 @@
 export namespace AdapterPattern {
 
     export class USAdaptee {
-        public plugInUS(): void {
+        public plugIn(): void {
             console.log('USAdaptee changed using THREE pin plug');
         }
     }
 
     export class EuropeAdaptee {
-        public plugInEurope(): void {
+        public plugIn(): void {
             console.log('EuropeAdaptee changed using THREE pin plug');
         }
     }
@@ -23,23 +23,19 @@ export namespace AdapterPattern {
             switch (adapter) {
                 case 'US-AD': {
                     let adapteeUS: USAdaptee = new USAdaptee();
-                    adapteeUS.plugInUS();
+                    adapteeUS.plugIn();
                     break;
                 }
                 case 'EUROPE-AD': {
                     let adapteeEurope: EuropeAdaptee = new EuropeAdaptee();
-                    adapteeEurope.plugInEurope();
+                    adapteeEurope.plugIn();
                     break;
                 }
                 default: {
                     console.error('There is no Adapter');
                     break;
                 }
-
             }
-
-
-
         }
     }
 }
