@@ -4,10 +4,12 @@ import { FactoryDemo } from './creational/factory';
 import { BuilderDemo } from './creational/builder';
 import { PrototypeDemo } from './creational/prototype';
 import { AdapterDemo } from './structural/adapter';
+import { BridgeDemo } from './structural/bridge';
 
 SingletonDemo.execute(false);
 AbstractFactoryDemo.execute(false);
 FactoryDemo.execute(false);
 BuilderDemo.execute(false);
 PrototypeDemo.execute(false);
-AdapterDemo.execute(true);
+AdapterDemo.execute(false);
+BridgeDemo.execute(true);

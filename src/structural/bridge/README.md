@@ -1,0 +1,1 @@
+- Decouple(separate) an abstraction from its implementation.
