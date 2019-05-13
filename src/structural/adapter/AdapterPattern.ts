@@ -1,20 +1,20 @@
 export namespace AdapterPattern {
 
-    export class USAdapter {
+    export class USAdaptee {
         public plugInUS(): void {
             console.log('USAdapter changed using THREE pin plug');
         }
     }
 
     export interface VNPlug {
-        plugIn(): void;
+        convert(): void;
     }
 
     export class VNAdapter implements VNPlug {
-        plugIn(): void {
+        convert(): void {
             console.log('VNAdapter is using two pin plug');
-            let adapter: USAdapter = new USAdapter();
-            adapter.plugInUS();
+            let adaptee: USAdaptee = new USAdaptee();
+            adaptee.plugInUS();
         }
     }
 }

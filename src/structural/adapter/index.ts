@@ -5,7 +5,7 @@ export namespace AdapterDemo {
         if (flag) {
             console.log('----------Start Adapter Factory----------');
             let adapter: AdapterPattern.VNAdapter = new AdapterPattern.VNAdapter();
-            adapter.plugIn();
+            adapter.convert();
             console.log('----------End Adapter Factory----------');
         }
     }
