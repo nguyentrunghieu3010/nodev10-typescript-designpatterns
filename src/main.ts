@@ -11,5 +11,5 @@ AbstractFactoryDemo.execute(false);
 FactoryDemo.execute(false);
 BuilderDemo.execute(false);
 PrototypeDemo.execute(false);
-AdapterDemo.execute(false);
-BridgeDemo.execute(true);
+AdapterDemo.execute(true);
+BridgeDemo.execute(false);
