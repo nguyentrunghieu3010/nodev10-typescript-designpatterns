@@ -7,6 +7,7 @@
 
 ### Adapter & Bridge ###
 > Adapter makes things work _after_ they're designed : Your current code have to apdate with newer system.
+
 > Bridge makes them work _before_ they are : Your current code have alternative implementations of system.
 
 - Before Bridge Design Pattern
