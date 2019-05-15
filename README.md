@@ -26,6 +26,11 @@ Here are the implementations of the following design patterns in TypeScript v.3.
 
 Desgin Patterns is the key to avoid the Spaghetti code
 
+![Classification & Usage](http://webfuse.in/wp-content/uploads/2017/06/DESIGN-PATTERNS-WEBFUSE-4.png)
+
+
+![Desgin Pattern Overall](https://4.bp.blogspot.com/-Mrv55XLP0y4/WwwaPGRIunI/AAAAAAAACV8/s3JTDambNs82GpY0_ZiITuqOrQy5ilG9QCLcBGAs/s1600/gof-design-pattern-category-diagram.PNG)
+
 ### Creational ###
 
 * [Singleton](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/creational/singleton)
