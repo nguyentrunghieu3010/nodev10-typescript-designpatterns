@@ -14,12 +14,13 @@ export namespace CompositeDemo {
             let compositeCompany = new CompositePattern.CompanyDirectory();
             compositeCompany.addEmployee(leafDeveloper_1);
             compositeCompany.addEmployee(leafDeveloper_2);
-            compositeCompany.addEmployee(leafDeveloper_3);
-            compositeCompany.addEmployee(leafDeveloper_4);
-
             compositeCompany.addEmployee(leafManager_2);
-
             compositeCompany.showEmployee();
+
+            let compositeCompany1 = new CompositePattern.CompanyDirectory();
+            compositeCompany1.addEmployee(leafDeveloper_3);
+            compositeCompany1.addEmployee(leafDeveloper_4);
+            compositeCompany1.showEmployee();
 
             console.log('----------End Composite Pattern----------');
         }
