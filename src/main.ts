@@ -5,11 +5,13 @@ import { BuilderDemo } from './creational/builder';
 import { PrototypeDemo } from './creational/prototype';
 import { AdapterDemo } from './structural/adapter';
 import { BridgeDemo } from './structural/bridge';
+import { CompositeDemo } from './structural/composite';
 
 SingletonDemo.execute(false);
 AbstractFactoryDemo.execute(false);
 FactoryDemo.execute(false);
 BuilderDemo.execute(false);
 PrototypeDemo.execute(false);
-AdapterDemo.execute(true);
+AdapterDemo.execute(false);
 BridgeDemo.execute(false);
+CompositeDemo.execute(true);
