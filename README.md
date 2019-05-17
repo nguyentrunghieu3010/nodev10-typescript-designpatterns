@@ -20,6 +20,9 @@ SOLID (SRP, OCP, LSP, ISP, DIP)
 ### Dependency Inversion ###
     Decoupling of software modules
 
+    ![SOLID](https://cdn-images-1.medium.com/max/1200/1*yO6YGExWLJl5VOUL61xXvQ.jpeg)
+    ![FIVE_SENSES](https://comps.gograph.com/five-senses-of-human-perception-poster-icons-taste-and-hear_gg105293706.jpg)
+
 # Design Patterns in TypeScript v.3.4.5 #
 
 Here are the implementations of the following design patterns in TypeScript v.3.4.5:
