@@ -5,6 +5,8 @@
 SOLID (SRP, OCP, LSP, ISP, DIP)
 
 [OODesign](https://www.oodesign.com/)
+[Design Patterns Landscape](https://refactoring.guru/design-patterns)
+
 
 ### Single Responsibility ###
     Testing – A class with one responsibility will have far fewer test cases
