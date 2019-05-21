@@ -6,6 +6,7 @@ import { PrototypeDemo } from './creational/prototype';
 import { AdapterDemo } from './structural/adapter';
 import { BridgeDemo } from './structural/bridge';
 import { CompositeDemo } from './structural/composite';
+import { DecoratorDemo } from './structural/decorator';
 
 SingletonDemo.execute(false);
 AbstractFactoryDemo.execute(false);
@@ -14,4 +15,5 @@ BuilderDemo.execute(false);
 PrototypeDemo.execute(false);
 AdapterDemo.execute(false);
 BridgeDemo.execute(false);
-CompositeDemo.execute(true);
+CompositeDemo.execute(false);
+DecoratorDemo.execute(true);
