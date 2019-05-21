@@ -5,7 +5,6 @@ export namespace DecoratorPattern {
     }
 
     export class FacebookNotification implements Notification {
-
         notify(): void {
             console.log('This is the Facebook Notfication');
         }
