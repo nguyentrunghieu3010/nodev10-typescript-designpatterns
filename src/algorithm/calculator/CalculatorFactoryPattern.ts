@@ -1,34 +1,73 @@
-import { Multiplication } from './Multiplication';
 
 export namespace CalculatorFactoryPattern {
     export interface Add {
-        calculate(numberA: number, numberB: number): number;
+        calculate(): number;
     }
 
     export interface Sub {
-        calculate(numberA: number, numberB: number): number;
+        calculate(): number;
+    }
+
+    export interface Mul {
+        calculate(): number;
     }
 
     export class PlusNumbers implements Add {
-        calculate(numberA: number, numberB: number): number {
-            return numberA + numberB;
+
+        numberA: number;
+        numberB: number;
+
+        constructor(numberA: number, numberB: number) {
+            this.numberA = numberA;
+            this.numberB = numberB;
+        }
+
+        calculate(): number {
+            return this.numberA + this.numberB;
         }
     }
 
     export class SubtractionNumbers implements Sub {
-        calculate(numberA: number, numberB: number): number {
-            return numberA - numberB;
+
+        numberA: number;
+        numberB: number;
+
+        constructor(numberA: number, numberB: number) {
+            this.numberA = numberA;
+            this.numberB = numberB;
+        }
+
+        calculate(): number {
+            return this.numberA - this.numberB;
+        }
+    }
+
+    export class MultipleNumbers implements Mul {
+
+        numberA: number;
+        numberB: number;
+
+        constructor(numberA: number, numberB: number) {
+            this.numberA = numberA;
+            this.numberB = numberB;
+        }
+
+        calculate(): number {
+            return this.numberA * this.numberB;
         }
     }
 
     export namespace CalculationCenter {
-        export function selectMethodCalculation(type: string) {
-            if (type === 'a') {
-                return new PlusNumbers();
-            } else if (type === 's') {
-                return new SubtractionNumbers();
-            }
-            return new Multiplication.MultiplicationNumbers();
+        export function AddNumbers(numberA: number, numberB: number) {
+            return new PlusNumbers(numberA, numberB);
+        }
+
+        export function MinusNumbers(numberA: number, numberB: number) {
+            return new SubtractionNumbers(numberA, numberB);
+        }
+
+        export function TimesNumbers(numberA: number, numberB: number) {
+            return new MultipleNumbers(numberA, numberB);
         }
     }
 }
