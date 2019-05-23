@@ -7,6 +7,7 @@ import { AdapterDemo } from './structural/adapter';
 import { BridgeDemo } from './structural/bridge';
 import { CompositeDemo } from './structural/composite';
 import { DecoratorDemo } from './structural/decorator';
+import { FacedeDemo } from './structural/facade';
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
 
@@ -19,4 +20,5 @@ AdapterDemo.execute(false);
 BridgeDemo.execute(false);
 CompositeDemo.execute(false);
 DecoratorDemo.execute(false);
-CalculatorDemo.execute(true);
+CalculatorDemo.execute(false);
+FacedeDemo.execute(true);
