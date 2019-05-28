@@ -8,6 +8,8 @@ import { BridgeDemo } from './structural/bridge';
 import { CompositeDemo } from './structural/composite';
 import { DecoratorDemo } from './structural/decorator';
 import { FacedeDemo } from './structural/facade';
+import { FlyWeightDemo } from './structural/flyweight';
+
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
 
@@ -21,4 +23,5 @@ BridgeDemo.execute(false);
 CompositeDemo.execute(false);
 DecoratorDemo.execute(false);
 CalculatorDemo.execute(false);
-FacedeDemo.execute(true);
+FacedeDemo.execute(false);
+FlyWeightDemo.execute(true);
