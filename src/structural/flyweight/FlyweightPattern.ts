@@ -5,65 +5,82 @@ export namespace FlyWeightPattern {
     }
 
     export interface Pen {
-        setColor(color: string): void;
         draw(content: string): void;
     }
 
     export class ThickPen implements Pen {
 
-        private color: string;
+        brushSize: BrushSize = BrushSize.THICK; // intrinsic
+        private color: string; // extrinsic
 
         constructor(color: string) {
             this.color = color;
         }
 
-        setColor(color: string): void {
-            this.color = color;
-        }
-
         draw(content: string): void {
-            console.log(BrushSize.THICK + ' Drawing THIN content in color : ' + content + this.color);
+            console.log(this.brushSize + ' Drawing THIN content in color : ' + content + this.color);
         }
     }
 
     export class ThinPen implements Pen {
-        private color!: string;
 
-        setColor(color: string): void {
+        brushSize: BrushSize = BrushSize.THIN; // intrinsic
+        private color: string; // extrinsic
+
+        constructor(color: string) {
             this.color = color;
         }
 
         draw(content: string): void {
-            console.log(BrushSize.THIN + ' Drawing THIN content in color : ' + content + this.color);
+            console.log(this.brushSize + ' Drawing THIN content in color : ' + content + this.color);
         }
     }
 
     export class MediumPen implements Pen {
 
-        private color!: string;
+        brushSize: BrushSize = BrushSize.MEDIUM; // intrinsic
+        private color: string; // extrinsic
 
-        setColor(color: string): void {
+        constructor(color: string) {
             this.color = color;
         }
 
         draw(content: string): void {
-            console.log(BrushSize.MEDIUM + ' Drawing THIN content in color : ' + content + this.color);
+            console.log(this.brushSize + ' Drawing THIN content in color : ' + content + this.color);
         }
     }
 
     export class PenFlyWeightFactory {
 
-        private fliesMap: { [s: string]: Pen; } = <any>{};
+        private pensMap: { [s: string]: Pen; } = <any>{};
 
         constructor() { }
 
-        public getFlyweight(key: string): Pen {
+        public getFlyweight(penType: string, color: string): Pen {
 
-            if (this.fliesMap[key] === undefined || null) {
-                console.log('key:::' + key);
-                this.fliesMap[key] = new ThickPen(key);
+            let penMapValue = this.pensMap[penType];
+
+            if (penMapValue === undefined || null) {
+                switch (penType) {
+                    case 'THICK': {
+                        console.log('ThickPen Created');
+                        penMapValue = new ThickPen(color);
+                        break;
+                    }
+                    case 'THIN': {
+                        console.log('ThinPen Created');
+                        penMapValue = new ThinPen(color);
+                        break;
+                    }
+                    case 'MEDIUM': {
+                        console.log('MediumPen Created');
+                        penMapValue = new MediumPen(color);
+                        break;
+                    }
+                }
+                this.pensMap[penType] = penMapValue;
             }
-            return this.fliesMap[key];
+            return this.pensMap[penType];
         }
 
     }
