@@ -54,7 +54,7 @@ Desgin Patterns is the key to avoid the Spaghetti code
 * [Decorator](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/structural/decorator)
 * [Facade](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/structural/facade)
 * [Flyweight](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/structural/flyweight)
-* [Proxy](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Proxy](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/structural/proxy)
 
 
 ### Behavioral Patterns ###
