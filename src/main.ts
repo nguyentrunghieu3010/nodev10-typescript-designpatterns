@@ -9,6 +9,7 @@ import { CompositeDemo } from './structural/composite';
 import { DecoratorDemo } from './structural/decorator';
 import { FacedeDemo } from './structural/facade';
 import { FlyWeightDemo } from './structural/flyweight';
+import { ProxyDemo } from './structural/proxy';
 
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
@@ -24,4 +25,5 @@ CompositeDemo.execute(false);
 DecoratorDemo.execute(false);
 CalculatorDemo.execute(false);
 FacedeDemo.execute(false);
-FlyWeightDemo.execute(true);
+FlyWeightDemo.execute(false);
+ProxyDemo.execute(true);
