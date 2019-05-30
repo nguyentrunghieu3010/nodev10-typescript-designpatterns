@@ -59,7 +59,7 @@ Desgin Patterns is the key to avoid the Spaghetti code
 
 ### Behavioral Patterns ###
 
-* [Chain of Responsibility](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Chain of Responsibility](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/behavioral/chain_of_responsibility)
 * [Command](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 * [Interpreter](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 * [Iterator](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
