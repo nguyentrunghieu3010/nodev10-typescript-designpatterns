@@ -10,6 +10,7 @@ import { DecoratorDemo } from './structural/decorator';
 import { FacedeDemo } from './structural/facade';
 import { FlyWeightDemo } from './structural/flyweight';
 import { ProxyDemo } from './structural/proxy';
+import { ChainResponsibilityDemo } from './behavioral/chain_of_responsibility';
 
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
@@ -26,4 +27,5 @@ DecoratorDemo.execute(false);
 CalculatorDemo.execute(false);
 FacedeDemo.execute(false);
 FlyWeightDemo.execute(false);
-ProxyDemo.execute(true);
+ProxyDemo.execute(false);
+ChainResponsibilityDemo.execute(true);
