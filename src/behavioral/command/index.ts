@@ -11,10 +11,8 @@ export namespace CommandDemo {
             remote.setCommand(new CommandPattern.LightOnCommand(light));
             remote.buttonWasPressed();
 
-
             remote.setCommand(new CommandPattern.LightOffCommand(light));
             remote.buttonWasPressed();
-
 
             console.log('----------End Command Pattern----------');
         }
