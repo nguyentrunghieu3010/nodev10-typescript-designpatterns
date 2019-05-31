@@ -11,6 +11,7 @@ import { FacedeDemo } from './structural/facade';
 import { FlyWeightDemo } from './structural/flyweight';
 import { ProxyDemo } from './structural/proxy';
 import { ChainResponsibilityDemo } from './behavioral/chain_of_responsibility';
+import { CommandDemo } from './behavioral/command';
 
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
@@ -28,4 +29,5 @@ CalculatorDemo.execute(false);
 FacedeDemo.execute(false);
 FlyWeightDemo.execute(false);
 ProxyDemo.execute(false);
-ChainResponsibilityDemo.execute(true);
+ChainResponsibilityDemo.execute(false);
+CommandDemo.execute(true);
