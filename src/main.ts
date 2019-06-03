@@ -13,6 +13,7 @@ import { ProxyDemo } from './structural/proxy';
 import { ChainResponsibilityDemo } from './behavioral/chain_of_responsibility';
 import { CommandDemo } from './behavioral/command';
 import { IteratorDemo } from './behavioral/iterator';
+import { MediatorDemo } from './behavioral/mediator';
 
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
@@ -32,4 +33,5 @@ FlyWeightDemo.execute(false);
 ProxyDemo.execute(false);
 ChainResponsibilityDemo.execute(false);
 CommandDemo.execute(false);
-IteratorDemo.execute(true);
+IteratorDemo.execute(false);
+MediatorDemo.execute(true);
