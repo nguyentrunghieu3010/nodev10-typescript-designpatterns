@@ -1,17 +1,17 @@
 ## Problems
 
+> Your application is continuously changing 
+> You decide to rollback or undo the changes changes at any point
 
 ## Solutions
 
 ![Solutions](https://refactoring.guru/images/patterns/content/mediator/mediator.png)
 
->  restricts direct communications between the objects and forces them to collaborate only via a mediator object
+>  CTRL + Z to undo
 
 ## Real World
 
-![Real](https://refactoring.guru/images/patterns/diagrams/mediator/live-example.png)
-
-> Aircraft pilots don’t talk to each other directly when deciding who gets to land their plane next. All communication goes through the control tower.
+>
 
 ## Relations with Other Patterns
 
