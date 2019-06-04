@@ -15,6 +15,7 @@ import { CommandDemo } from './behavioral/command';
 import { IteratorDemo } from './behavioral/iterator';
 import { MediatorDemo } from './behavioral/mediator';
 import { InterpreterDemo } from './behavioral/interpreter';
+import { MementoDemo } from './behavioral/memento';
 
 
 //Algorithm
@@ -37,4 +38,5 @@ ChainResponsibilityDemo.execute(false);
 CommandDemo.execute(false);
 IteratorDemo.execute(false);
 MediatorDemo.execute(false);
-InterpreterDemo.execute(true);
+InterpreterDemo.execute(false);
+MementoDemo.execute(true);
