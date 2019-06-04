@@ -5,8 +5,6 @@
 
 ## Solutions
 
-![Solutions](https://refactoring.guru/images/patterns/content/mediator/mediator.png)
-
 >  CTRL + Z to undo
 
 ## Real World

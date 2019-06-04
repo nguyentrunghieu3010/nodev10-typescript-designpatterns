@@ -16,7 +16,7 @@ import { IteratorDemo } from './behavioral/iterator';
 import { MediatorDemo } from './behavioral/mediator';
 import { InterpreterDemo } from './behavioral/interpreter';
 import { MementoDemo } from './behavioral/memento';
-
+import { ObserverDemo } from './behavioral/observer';
 
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
@@ -39,4 +39,5 @@ CommandDemo.execute(false);
 IteratorDemo.execute(false);
 MediatorDemo.execute(false);
 InterpreterDemo.execute(false);
-MementoDemo.execute(true);
+MementoDemo.execute(false);
+ObserverDemo.execute(true);

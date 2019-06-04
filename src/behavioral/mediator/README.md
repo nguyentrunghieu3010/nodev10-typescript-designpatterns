@@ -1,5 +1,6 @@
 ## Problems
 
+> Mediator eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object
 
 ## Solutions
 
