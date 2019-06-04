@@ -66,8 +66,8 @@ Desgin Patterns is the key to avoid the Spaghetti code
 * [Mediator](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/behavioral/mediator)
 * [Memento](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/behavioral/memento)
 * [Strategy](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/behavioral/strategy)
-* [Observer](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
-* [State](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
+* [Observer](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/behavioral/observer)
+* [State](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/behavioral/state)
 * [Template Method](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 * [Visitor](https://github.com/nguyentrunghieu3010/nodev10-typescript-designpatterns/tree/master/src/singleton)
 

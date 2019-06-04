@@ -25,3 +25,4 @@
 ## Relations with Other Patterns
 
 > Decorator lets you change the skin of an object, while Strategy lets you change the guts
+> Strategy is based on composition
