@@ -14,6 +14,8 @@ import { ChainResponsibilityDemo } from './behavioral/chain_of_responsibility';
 import { CommandDemo } from './behavioral/command';
 import { IteratorDemo } from './behavioral/iterator';
 import { MediatorDemo } from './behavioral/mediator';
+import { InterpreterDemo } from './behavioral/interpreter';
+
 
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
@@ -34,4 +36,5 @@ ProxyDemo.execute(false);
 ChainResponsibilityDemo.execute(false);
 CommandDemo.execute(false);
 IteratorDemo.execute(false);
-MediatorDemo.execute(true);
+MediatorDemo.execute(false);
+InterpreterDemo.execute(true);
