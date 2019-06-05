@@ -20,6 +20,8 @@ import { ObserverDemo } from './behavioral/observer';
 import { StrategyDemo } from './behavioral/strategy';
 import { StateDemo } from './behavioral/state';
 import { TemplateDemo } from './behavioral/template';
+import { VistorDemo } from './behavioral/visitor';
+
 //Algorithm
 import { CalculatorDemo } from './algorithm/calculator';
 
@@ -45,4 +47,5 @@ MementoDemo.execute(false);
 ObserverDemo.execute(false);
 StrategyDemo.execute(false);
 StateDemo.execute(false);
-TemplateDemo.execute(true);
+TemplateDemo.execute(false);
+VistorDemo.execute(true);
